@@ -42,6 +42,7 @@ var argscheck = require('cordova/argscheck'),
 * @param {Array.<ContactField>} photos
 * @param {Array.<ContactField>} categories
 * @param {Array.<ContactField>} urls contact's web sites
+* @param {DOMString} rawId unique identifier
 */
 var Contact = function (id, displayName, name, nickname, phoneNumbers, emails, addresses,
     ims, organizations, birthday, note, photos, categories, urls, rawId) {

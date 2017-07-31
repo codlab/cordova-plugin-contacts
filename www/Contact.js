@@ -44,9 +44,9 @@ var argscheck = require('cordova/argscheck'),
 * @param {Array.<ContactField>} urls contact's web sites
 */
 var Contact = function (id, displayName, name, nickname, phoneNumbers, emails, addresses,
-    ims, organizations, birthday, note, photos, categories, urls) {
+    ims, organizations, birthday, note, photos, categories, urls, rawId) {
     this.id = id || null;
-    this.rawId = null;
+    this.rawId = rawId || null;
     this.displayName = displayName || null;
     this.name = name || null; // ContactName
     this.nickname = nickname || null;

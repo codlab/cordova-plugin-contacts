@@ -1083,6 +1083,7 @@ public class ContactAccessorSdk5 extends ContactAccessor {
         // Get the RAW_CONTACT_ID which is needed to insert new values in an already existing contact.
         // But not needed to update existing values.
         String rawId = getJsonString(contact, "rawId");
+        if(rawId == null) rawId = getJsonString(contact, "id");
 
         // Create a list of attributes to add to the contact database
         ArrayList<ContentProviderOperation> ops = new ArrayList<ContentProviderOperation>();
